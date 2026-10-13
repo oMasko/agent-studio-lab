@@ -1,0 +1,15 @@
+.venv/
+.data/
+.agent-studio/
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
+*.py[cod]
+web/.next/
+web/node_modules/
+web/.env.local
+web/*.tsbuildinfo
+.discussion-client.json
+.discussion-state-*.tmp

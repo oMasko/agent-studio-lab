@@ -1,0 +1,9 @@
+.catalog { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px; }
+.card { max-width: 640px; padding: 28px; border: 1px solid var(--line); border-radius: 20px; background: #fff; }
+.badge { display: inline-block; padding: 5px 10px; border-radius: 999px; background: var(--purple-soft); color: var(--purple-dark); font-size: 12px; }
+.card h2 { margin: 18px 0 12px; font-size: 22px; }
+.card p { color: var(--muted); line-height: 1.8; font-size: 14px; }
+.card .note { font-size: 12px; }
+.entry { display: inline-flex; align-items: center; gap: 16px; margin-top: 16px; padding: 12px 16px; border-radius: 12px; background: var(--purple-soft); color: var(--purple-dark); text-decoration: none; font-size: 14px; font-weight: 600; }
+.entry:hover { background: #e6e0ff; }
+.entry:focus-visible { outline: 2px solid var(--purple); outline-offset: 4px; }

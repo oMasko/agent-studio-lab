@@ -1,0 +1,36 @@
+{
+  "name": "agent-studio-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "predev": "node scripts/kill-stale-next-dev.mjs",
+    "dev": "next dev",
+    "dev:check": "node scripts/kill-stale-next-dev.mjs --dry-run",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test:permissions": "node scripts/test-agent-permissions.mjs",
+    "test:context": "node scripts/test-context-usage.mjs",
+    "test:compaction": "node scripts/test-compaction.mjs",
+    "test:discussions": "node scripts/test-discussions.mjs"
+  },
+  "dependencies": {
+    "@openai/agents": "0.18.0",
+    "dotenv": "18.0.0",
+    "jszip": "^3.10.2",
+    "next": "16.3.5",
+    "openai": "^7.2.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "yaml": "^2.9.1",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.9.0"
+  }
+}
